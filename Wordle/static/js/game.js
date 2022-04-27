@@ -278,13 +278,21 @@ async function guessWord(){
         }
         switch (win) {
             case true:
-                if (window.confirm("gg t'as gagné, on rejoue ?")==true) {
-                    window.location.href='/Jeu';
+                if (window.confirm("Bravo! Tu as trouvé la réponse!\nVeux-tu rejouer?")==true) {
+                    if (mode=='classique') {
+                        window.location.href='/Jeu';
+                    } else {
+                        window.location.href='/JeuPL';
+                    }
                 }
                 break;
             case false:
-                if (window.confirm("ctait " + res +"\ncheh :) . on rejoue ?")==true) {
-                    window.location.href='/Jeu';
+                if (window.confirm("Perdu ! La réponse était : " + res +"\nVeux-tu rejouer?")==true) {
+                    if (mode=='classique') {
+                        window.location.href='/Jeu';
+                    } else {
+                        window.location.href='/JeuPL';
+                    }
                 }
                 break;
         }
