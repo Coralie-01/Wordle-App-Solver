@@ -31,24 +31,14 @@ def getState(guess,response):
         if guess[i]==response[i]:
             state[i]=2
             response[i]=""
-    print(guess)
-    print(response)
-    print(state)
     for j in range(l):
         for k in range(l):
-            if guess[j] == response[k] and state[j]!=2:
+            if guess[j] == response[k]:
                 state[j]=1
                 response[k]=""
-                break
-    print(guess)
-    print(response)
-    print(state)
     for h in range(l):
         if state[h]==None:
             state[h]=0
-    print(guess)
-    print(response)
-    print(state)
     return state
 
 def isFound(guess,word):
