@@ -21,7 +21,7 @@ def wordle_stats():
         perfs=getPerfs(data)
         return render_template('stats.html',username=username,games_nb=games_nb,win_percentage=win_percentage,series=series,perfs=perfs)
     else :
-        return redirect(url_for("home.wordle_home"))
+        return redirect('/my_friends')
 @stats.route('/stats/<user>')
 def stats_friend(user):
     me=session["name"]
