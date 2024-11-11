@@ -22,6 +22,7 @@ python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 python3 Wordle/app.py
+```
 
 ## **Wordle Solver**
 * Solves for a [dictionary](./Solveur/liste_78k.txt) with 78k words
@@ -44,3 +45,4 @@ After cloning, open a second terminal and run:
 ```bash
 cd project2-E8/Solveur/src
 make solveur_main_test
+```
