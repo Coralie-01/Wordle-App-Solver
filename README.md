@@ -1,8 +1,6 @@
 # Wordle Application and Solver
 Academic project with TELECOM Nancy
 
-## Wordle - Solveur de Wordle
-
 [The detailed project description in PDF format](./Projet_P2I2_S2_2122_DP.pdf)
 
 
